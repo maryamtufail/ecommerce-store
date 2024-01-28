@@ -16,7 +16,7 @@ const Recommended = () => {
               Recommended Products
             </h1>
           </div>
-          <div className="w-2/4 ">
+          <div className="w-2/4 overflow-hidden md:flex hidden">
             <img
               className="w-full h-full object-cover"
               src="/images/recommended.png"
