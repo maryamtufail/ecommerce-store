@@ -1,9 +1,10 @@
-import React from 'react'
+import React from "react";
+import useDocumentTitle from "../hooks/useDocumentTitle";
 
 const Shop = () => {
-  return (
-    <div>sop</div>
-  )
-}
+  useDocumentTitle("Salinaka | Shop");
 
-export default Shop
+  return <div>sop</div>;
+};
+
+export default Shop;
