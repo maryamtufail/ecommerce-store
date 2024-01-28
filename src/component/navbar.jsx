@@ -3,6 +3,7 @@ import { RiSearch2Line, RiShoppingBag2Line } from "react-icons/ri";
 import { Link } from "react-router-dom";
 
 export const Navbar = () => {
+
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -87,15 +88,15 @@ export const Navbar = () => {
 
         <div className="flex lg:ml-12">
           <Link
-            to="#"
-            className="block text-sm px-4 py-2 text-white ml-2 font-semibold bg-black hover:text-gray-800 mt-4 lg:mt-0"
+            to="/signup"
+            className="block text-sm px-4 py-2 text-white ml-2 font-semibold bg-black  mt-4 lg:mt-0"
           >
             Sign Up
           </Link>
 
           <Link
-            to="#"
-            className=" block text-sm px-4 ml-2 py-2 border-2 text-gray-500 font-semibold hover:text-gray-800 mt-4 lg:mt-0"
+            to="/signin"
+            className=" block text-sm px-4 ml-2 py-2 border-2 border-gray-300 bg-gray-200 text-gray-500 hover:bg-white font-semibold mt-4 lg:mt-0"
           >
             Sign In
           </Link>

@@ -3,8 +3,11 @@ import React from "react";
 import Layout from "./layout";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
-import ProductList from "./component/productList";
-import productsData from "./data/products.json";
+import SignUp from "./pages/signup";
+import SignIn from "./pages/signin";
+import Recommended from "./pages/recommended";
+import Shop from "./pages/shop";
+import Featured from "./pages/featured";
 
 function App() {
   return (
@@ -13,25 +16,11 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
-            <Route
-              path="/recommended"
-              element={<ProductList products={productsData.recommended} />}
-            />
-            <Route
-              path="/featured"
-              element={<ProductList products={productsData.featured} />}
-            />
-            <Route
-              path="/shop"
-              element={
-                <ProductList
-                  products={productsData.featured.concat(
-                    productsData.recommended,
-                    productsData.store
-                  )}
-                />
-              }
-            />
+            <Route path="/signup" element={<SignUp />} />
+            <Route path="/signin" element={<SignIn />} />
+            <Route path="/recommended" element={<Recommended />} />
+            <Route path="/featured" element={<Featured />} />
+            <Route path="/shop" element={<Shop />} />
           </Route>
         </Routes>
       </BrowserRouter>

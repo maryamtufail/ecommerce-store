@@ -3,7 +3,7 @@ import { IoArrowForward } from "react-icons/io5";
 
 const Hero = () => {
   return (
-    <div className="flex h-[36rem] bg-[#f3f3f3]">
+    <div className="flex h-[27rem] bg-[#f3f3f3]">
       <div className="flex flex-col items-start justify-center p-[5rem] lg:w-2/4">
         <h1 className="font-semibold text-[#1a1a1a] my-[0.67em] text-5xl">
           <strong>See</strong> everything with <strong>Clarity</strong>

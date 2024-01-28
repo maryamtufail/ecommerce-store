@@ -11,7 +11,7 @@ const Home = () => {
 
   return (
     <section>
-      <div className="py-[3rem] px-[4rem] relative flex ">
+      <div className="py-[3rem] px-[4rem] relative flex">
         <Hero />
       </div>
       <div className="py-12 ">
